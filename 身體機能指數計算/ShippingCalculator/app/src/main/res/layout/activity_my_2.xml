@@ -1,0 +1,321 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/actions"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MyActivity">
+    <!-- WEIGHT INPUT SECTION -->
+
+    <!-- actions.xml為自製背景-->
+
+    <!--點擊時執行Comp()-->
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/inputRelative"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="210dp"
+        android:layout_marginRight="210dp"
+        android:background="@drawable/actions"
+        android:onClick="Res"
+        android:text="Reset" />
+
+    <Button
+        android:id="@+id/load"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/reset"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="210dp"
+        android:layout_marginRight="210dp"
+        android:background="@drawable/actions"
+        android:onClick="load"
+        android:text="@string/load" />
+
+    <Button
+        android:id="@+id/add"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/inputRelative"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginRight="55dp"
+        android:background="@drawable/actions"
+        android:onClick="add"
+        android:text="@string/add" />
+
+    <Button
+        android:id="@+id/delete"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/add"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginRight="55dp"
+        android:background="@drawable/actions"
+        android:onClick="delete"
+        android:text="@string/delete" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/load"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/name"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/inputName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/delete"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:inputType="text"
+        android:selectAllOnFocus="true" />
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/inputName"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/bgc"
+        android:choiceMode="multipleChoice" />
+
+    <TextView
+        android:id="@+id/textViewAdapter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/inputName"
+        android:layout_marginTop="0dp"/>
+
+
+    <RelativeLayout
+        android:id="@+id/inputRelative"
+        android:layout_width="400dp"
+        android:layout_height="230dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/bgc">
+
+
+        <!-- TEXTVIEWS FOR BASE COST LABEL AND COMPUTATION  -->
+
+        <EditText
+            android:id="@+id/editText5"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editText4"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="120dp"
+            android:ems="10"
+            android:gravity="center_vertical|center_horizontal"
+            android:hint="@string/zero"
+            android:inputType="number"
+            android:selectAllOnFocus="true"><!--inputType限制使用者輸入-->
+
+            <requestFocus />
+        </EditText>
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView12"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="17dp"
+            android:paddingLeft="@dimen/output_margin_buffer"
+            android:text="年齡: "
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/editText4"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="120dp"
+            android:ems="10"
+            android:gravity="center_vertical|center_horizontal"
+            android:hint="@string/zero"
+            android:inputType="number"
+            android:selectAllOnFocus="true"><!--inputType限制使用者輸入-->
+
+            <requestFocus />
+        </EditText>
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="25dp"
+            android:paddingLeft="@dimen/output_margin_buffer"
+            android:text="膝長: "
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView13"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="17dp"
+            android:paddingLeft="@dimen/output_margin_buffer"
+            android:text="身高: "
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView9"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="17dp"
+            android:paddingLeft="@dimen/output_margin_buffer"
+            android:text="體重: "
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editText1"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="120dp"
+            android:ems="10"
+            android:gravity="center_vertical|center_horizontal"
+            android:hint="0.0"
+            android:inputType="numberDecimal"
+            android:selectAllOnFocus="true">
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editText5"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="120dp"
+            android:ems="10"
+            android:gravity="center_vertical|center_horizontal"
+            android:hint="@string/zero"
+            android:inputType="number"
+            android:selectAllOnFocus="true"><!--inputType限制使用者輸入-->
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/editText3"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editText2"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="120dp"
+            android:digits="123"
+            android:ems="10"
+            android:gravity="center_vertical|center_horizontal"
+            android:hint="1~3"
+            android:inputType="number"
+            android:selectAllOnFocus="true">
+
+            <requestFocus /><!--digits更加限制使用者輸入-->
+        </EditText>
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView10"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="17dp"
+            android:paddingLeft="@dimen/output_margin_buffer"
+            android:text="活動量: "
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="90dp"
+            android:layout_height="48dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="22dp"
+            android:layout_marginRight="22dp"
+            android:background="@drawable/actions"
+            android:onClick="Gender"
+            android:text="男性" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="90dp"
+            android:layout_height="48dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="80dp"
+            android:layout_marginEnd="22dp"
+            android:layout_marginRight="22dp"
+            android:background="@drawable/actions"
+            android:onClick="Comp"
+            android:text="自行輸入" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/appintro"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="-7dp"
+        android:text="@string/appintro" />
+
+    <Button
+        android:id="@+id/idealweight"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="-7dp"
+        android:layout_marginEnd="66dp"
+        android:layout_marginRight="45dp"
+        android:text="@string/idealweight" />
+
+
+</RelativeLayout>

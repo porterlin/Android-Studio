@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">NP字典</string>
+    <!-- 登入頁面 -->
+    <string name="app_title">NP字典</string>
+    <string name="account">帳號:</string>
+    <string name="mail">123@gmail.com</string>
+    <string name="password">密碼:</string>
+    <string name="inputPassword"></string>
+    <string name="register">註冊</string>
+    <string name="loginIn">登入</string>
+    <string name="address">&lt;a href="">沒有帳號?&lt;/a></string>
+    <string name="registerAC">註冊帳號</string>
+    <string name="learn">學習進度: 0%</string>
+    <string name="settings_name">清除進度</string>
+    <string name="confirmPassword">確認密碼:</string>
+    <string name="validationNum">驗證碼:</string>
+    <string name="sendValidationNum">傳送驗證碼</string>
+    <string name="deleteAccount">刪除帳號</string>
+</resources>

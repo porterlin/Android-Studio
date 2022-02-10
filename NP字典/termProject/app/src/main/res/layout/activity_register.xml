@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register">
+
+    <TextView
+        android:id="@+id/np_dictionary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:gravity="center"
+        android:text="@string/registerAC"
+        android:textSize="50sp" />
+
+    <TextView
+        android:id="@+id/account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/np_dictionary"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="60dp"
+        android:text="@string/account"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/inputAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/np_dictionary"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="60dp"
+        android:ellipsize="end"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/mail"
+        android:inputType="textEmailAddress" />
+
+    <TextView
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/account"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="25dp"
+        android:text="@string/password"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/inputPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/account"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="60dp"
+        android:ellipsize="end"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/inputPassword"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:id="@+id/confirmPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="25dp"
+        android:text="@string/confirmPassword"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/inputConfirmPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="40dp"
+        android:ellipsize="end"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/inputPassword"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:id="@+id/validationNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/confirmPassword"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="25dp"
+        android:text="@string/validationNum"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/inputValidationNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/confirmPassword"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="40dp"
+        android:ellipsize="end"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/inputPassword"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/sendValidationNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/validationNum"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="40dp"
+        android:gravity="center"
+        android:text="@string/sendValidationNum"
+        android:textSize="15sp" />
+
+
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/validationNum"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="100dp"
+        android:gravity="center"
+        android:text="@string/register"
+        android:textSize="20sp" />
+
+
+</RelativeLayout>

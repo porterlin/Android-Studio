@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ShippingCalculator.iml" filepath="$PROJECT_DIR$/.idea/modules/ShippingCalculator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/ShippingCalculator.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/ShippingCalculator.app.iml" />
+    </modules>
+  </component>
+</project>

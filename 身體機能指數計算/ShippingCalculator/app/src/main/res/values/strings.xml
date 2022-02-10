@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">lab7身體機能計算</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="weightLBL">Weight of the package</string>
+    <string name="ouncesLBL">(in ounces)</string>
+    <string name="baseLBL">Base Cost:</string>
+    <string name="addCostLBL">Added Cost:</string>
+    <string name="totalLBL">Total Shipping Cost:</string>
+    <string name="zeroDec">$0.00</string>
+    <string name="zero">0</string>
+
+    <string name="appintro">App介紹</string>
+    <string name="idealweight">理想體重</string>
+    <string name="inputinfo">資訊輸入</string>
+
+    <string name="app_name_appintro">App介紹</string>
+    <string name="exit">Exit</string>
+
+    <string name="stdweight">標準體重:</string>
+    <string name="weightrge">體重合理範圍：</string>
+    <string name="daycal">每日所需熱量：</string>
+
+    <string name="ori">本程式由</string>
+    <string name="three">1081503 林品辰</string>
+    <string name="twentyfive">1081525 黃志翔</string>
+    <string name="make">製作</string>
+
+    <string name="load">load</string>
+    <string name="add">add</string>
+    <string name="delete">delete</string>
+
+    <string name="name">Name:</string>
+
+
+</resources>

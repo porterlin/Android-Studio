@@ -1,0 +1,79 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:letterSpacing="0.7"
+        android:text="@string/game_title"
+        android:textSize="40sp" />
+
+    <TextView
+        android:id="@+id/level"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/level"
+        android:layout_below="@id/title"
+        android:layout_marginTop="160dp"
+        android:layout_marginLeft="25dp"
+        android:textSize="30sp"/>
+
+    <TextView
+        android:id="@+id/seekbarHint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/seekbarHint"
+        android:layout_below="@id/title"
+        android:layout_marginTop="160dp"
+        android:layout_marginLeft="105dp"
+        android:textSize="30sp"/>
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="210dp"
+        android:layout_marginEnd="8dp"
+        android:max="2"
+        android:progress="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/newGame"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="@string/newGame"
+        android:layout_below="@id/seekBar"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="50dp"/>
+
+    <Button
+        android:id="@+id/continueGame"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="@string/continueGame"
+        android:layout_below="@id/seekBar"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="220dp"/>
+
+    <Button
+        android:id="@+id/quit"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="@string/quit"
+        android:layout_below="@id/continueGame"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="220dp"/>
+
+
+
+</RelativeLayout>

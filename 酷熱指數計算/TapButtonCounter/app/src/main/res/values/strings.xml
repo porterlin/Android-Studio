@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Tap Button Counter</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="tewnty_eight">28</string>
+    <string name="degcel">Deg. Celsius</string>
+    <string name="celadd">+</string>
+    <string name="celsub">-</string>
+
+    <string name="fifty">50</string>
+    <string name="hui">Humidity</string>
+    <string name="huiadd">+</string>
+    <string name="huisub">-</string>
+
+    <string name="hi">HI:</string>
+    <string name="hival"></string>
+    <string name="comp">Comp</string>
+    <string name="reset">Reset</string>
+
+</resources>

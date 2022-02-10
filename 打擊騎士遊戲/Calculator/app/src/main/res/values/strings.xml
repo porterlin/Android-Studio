@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">打擊騎士</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="show"></string>
+    <string name="result"></string>
+    <string name="nextstep">下一步</string>
+    <string name="continuewalk">連續走完</string>
+    <string name="restart">重新開始</string>
+    <string name="pause">暫停</string>
+    <string name="score">Score: 0</string>
+    <string name="hit">Hit: 0</string>
+    <string name="miss">Miss: 0</string>
+
+    <string name="title_activity_game">打擊騎士</string>
+    <string name="game_title">打擊騎士</string>
+    <string name="level">level:</string>
+    <string name="seekbarHint">2</string>
+
+    <string name="newGame">New Game</string>
+    <string name="continueGame">Continue</string>
+    <string name="quit">Quit</string>
+
+</resources>
